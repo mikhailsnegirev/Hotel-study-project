@@ -1,66 +1,87 @@
-.header
-  background: #FFFFFF
+.navbar
+  background-color: $light
   &-top
     display: flex
     align-items: center
     justify-content: space-between
-    padding-top: 40px
-    padding-bottom: 40px 
-  &-logo
-    width: 177px
+    padding: 40px 0
+    &__navbar-btn
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
-  &-nav
-    background-color: $bgc
+  &-bottom
+    padding: 31px 0
+    background-color: $dark
   &-menu
     display: flex
-    list-style: none
     align-items: center
     justify-content: space-between
-    margin: 0
-    padding: 31px 0
+    list-style: none
+    color: $light
     &__link
-      text-decoration: none
-      color: white
+      font-weight: 700
+      font-size: 14px
+      color: inherit
       text-transform: uppercase
+      text-decoration: none
+      transition: color 0.3s
+      &:hover
+        color: $primary
+    &__item
+      &_mobile
+        &_visible
+          display: none
+.logo
+  width: 177px
 .search
-  border-radius: 6px
   display: flex
+  height: 40px
   position: relative
   overflow: hidden
-  height: 40px
+  border-radius: 6px
   &__input
     width: 350px
     height: 100%
-    padding-left: 23px
     padding-right: 75px
-    background-color: #F5FAFE
-    border: none
+    padding-left: 23px
     font-size: 12px
     line-height: 15px
+    text-overflow: ellipsis
     color: $text-color
+    background-color: $secondary
+    border: none
+    outline: none
+    &::placeholder
+      color: $text-color
+      opacity: 1
+      transition: opacity 0.3s ease
+    &:focus::placeholder
+      opacity: 0
+      transition: opacity 0.3s ease
   &__button
-    position: absolute
-    height: 100%
     width: 65px
+    height: 100%
+    position: absolute
     top: 0
     right: 0
     border: none
-    background-color: $defolt-color
+    background-color: $primary
+    cursor: pointer
+    outline: none
+  &__icon
+    width: 16px
 .user
   display: flex
   align-items: center
   text-decoration: none
-  &__image
+  &__avatar
     width: 40px
     height: 40px
     border-radius: 50%
     object-fit: cover
   &__name
+    margin-left: 18px
     font-size: 14px
     line-height: 18px
     color: $text-color
-    margin-left: 18px
-.header-top__menu-button
-  display: none
