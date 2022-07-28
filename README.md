@@ -1,6 +1,6 @@
 # Hotel project
 
-# Link:https://mikhailsnegirev.github.io/Hotel-study-project/
+# Link:https://mikhailsnegirev.github.io/Hotel-study-project_HTML-CSS-SASS-JS/
 
 
 **Hotel project**  
